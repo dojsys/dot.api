@@ -1,4 +1,4 @@
-endpoint: http://localhost:4477/divstuff/dev
+endpoint: http://mis.divstuff.net:4477/divstuff/dev
 datamodel: datamodel.graphql
 
 hooks:
