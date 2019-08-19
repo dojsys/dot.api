@@ -3,10 +3,10 @@ projects:
     schemaPath: src/schema.graphql
     extensions:
       endpoints:
-        default: http://localhost:8000/graphql
+        default: http://mis.divstuff.net:4000/graphql
   db:
     schemaPath: src/generated/prisma.graphql
     extensions:
       prisma: prisma.yml
       endpoints:
-        default: 'http://localhost:4477/divstff/dev'
+        default: 'http://mis.divstuff.net:4477/divstff/dev'

@@ -16,14 +16,14 @@ const server = new GraphQLServer({
     },
     db: new Prisma({
       typeDefs: 'src/generated/prisma.graphql',
-      endpoint: 'http://localhost:4477/divstuff/dev'
+      endpoint: 'http://mis.divstuff.net:4477/divstuff/dev'
     })
   },fragmentReplacements)
 })
 
 const options = {
   env: process.env.NODE_ENV,
-  port: process.env.PORT || 8000,
+  port: process.env.PORT || 4000,
   endpoint: '/graphql',
   subscriptions: '/subscriptions',
   playground: '/playground',
