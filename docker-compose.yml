@@ -13,17 +13,10 @@ services:
         databases:
           default:
             connector: mysql
-            host: mysql
+            host: 192.168.200.222
             port: 3306
-            user: root
-            password: prisma
+            database: dot.treas-api
+            user: divpri
+            password: Password1
             migrations: true
-  mysql:
-    image: mysql:5.7
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: prisma
-    volumes:
-      - mysql:/var/lib/mysql
-volumes:
-  mysql:
+ 

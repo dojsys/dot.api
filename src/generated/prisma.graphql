@@ -1,5 +1,5 @@
 # source: http://localhost:4477/divstuff/dev
-# timestamp: Sat Aug 17 2019 12:22:01 GMT+0800 (PST)
+# timestamp: Mon Aug 19 2019 11:02:44 GMT+0800 (Philippine Standard Time)
 
 type AggregateCar {
   count: Int!
@@ -176,9 +176,7 @@ input CarSubscriptionWhereInput {
   """Logical NOT on all given filters combined by AND."""
   NOT: [CarSubscriptionWhereInput!]
 
-  """
-  The subscription event gets dispatched when it's listed in mutation_in
-  """
+  """The subscription event gets dispatched when it's listed in mutation_in"""
   mutation_in: [MutationType!]
 
   """
@@ -405,9 +403,7 @@ input ChatSubscriptionWhereInput {
   """Logical NOT on all given filters combined by AND."""
   NOT: [ChatSubscriptionWhereInput!]
 
-  """
-  The subscription event gets dispatched when it's listed in mutation_in
-  """
+  """The subscription event gets dispatched when it's listed in mutation_in"""
   mutation_in: [MutationType!]
 
   """
@@ -904,9 +900,7 @@ input PostSubscriptionWhereInput {
   """Logical NOT on all given filters combined by AND."""
   NOT: [PostSubscriptionWhereInput!]
 
-  """
-  The subscription event gets dispatched when it's listed in mutation_in
-  """
+  """The subscription event gets dispatched when it's listed in mutation_in"""
   mutation_in: [MutationType!]
 
   """
@@ -1232,8 +1226,6 @@ input UserCreateInput {
   email: String!
   emailvalidated: Boolean
   validateEmailToken: String!
-  createdAt: DateTime!
-  updatedAt: DateTime!
   password: String!
   nameFile: String!
   resetPasswordToken: String!
@@ -1258,8 +1250,6 @@ input UserCreateWithoutPostsInput {
   email: String!
   emailvalidated: Boolean
   validateEmailToken: String!
-  createdAt: DateTime!
-  updatedAt: DateTime!
   password: String!
   nameFile: String!
   resetPasswordToken: String!
@@ -1336,9 +1326,7 @@ input UserSubscriptionWhereInput {
   """Logical NOT on all given filters combined by AND."""
   NOT: [UserSubscriptionWhereInput!]
 
-  """
-  The subscription event gets dispatched when it's listed in mutation_in
-  """
+  """The subscription event gets dispatched when it's listed in mutation_in"""
   mutation_in: [MutationType!]
 
   """
@@ -1362,8 +1350,6 @@ input UserUpdateDataInput {
   email: String
   emailvalidated: Boolean
   validateEmailToken: String
-  createdAt: DateTime
-  updatedAt: DateTime
   password: String
   nameFile: String
   resetPasswordToken: String
@@ -1377,8 +1363,6 @@ input UserUpdateInput {
   email: String
   emailvalidated: Boolean
   validateEmailToken: String
-  createdAt: DateTime
-  updatedAt: DateTime
   password: String
   nameFile: String
   resetPasswordToken: String
@@ -1392,8 +1376,6 @@ input UserUpdateManyMutationInput {
   email: String
   emailvalidated: Boolean
   validateEmailToken: String
-  createdAt: DateTime
-  updatedAt: DateTime
   password: String
   nameFile: String
   resetPasswordToken: String
@@ -1424,8 +1406,6 @@ input UserUpdateWithoutPostsDataInput {
   email: String
   emailvalidated: Boolean
   validateEmailToken: String
-  createdAt: DateTime
-  updatedAt: DateTime
   password: String
   nameFile: String
   resetPasswordToken: String
