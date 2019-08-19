@@ -1,0 +1,44 @@
+{
+  "name": "divstuff-app",
+  "main": "src/index.js",
+  "scripts": {
+    "dist": "env-cmd development node dist/index.js",
+    "start": "node src/index.js",
+    "playground": "prisma playground",
+    "dev": "env-cmd development npm-run-all --parallel start playground",
+    "build": "babel src --out-dir dist --copy-files",
+    "prisma": "prisma"
+  },
+  "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "bcryptjs": "2.4.3",
+    "graphql-cli": "^3.0.14",
+    "graphql-yoga": "^1.18.1",
+    "jsonwebtoken": "8.3.0",
+    "nodemailer": "4.6.7",
+    "cors": "^2.8.5",
+    "prisma": "^1.34.5",
+    "prisma-binding": "^2.3.15",
+    "prisma-client-lib": "^1.34.5",
+    "regenerator-runtime": "^0.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/runtime": "^7.3.4",
+    "@babel/node": "^7.5.5",
+    "env-cmd": "^8.0.2",
+    "npm-run-all": "4.1.3"
+  },
+  "resolutions": {
+    "graphql": "0.13.2"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}
