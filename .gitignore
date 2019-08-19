@@ -48,6 +48,9 @@ typings/
 # Optional REPL history
 .node_repl_history
 
+#package
+package-lock.json
+
 # Output of 'npm pack'
 *.tgz
 
@@ -57,6 +60,7 @@ typings/
 # gatsby files
 .cache/
 public
+dist
 
 # Mac files
 .DS_Store
